@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.header {
+    position: fixed;
+    z-index: 1000;
+    width: 100%;
+    background: #7f8282;
+    text-align: right;
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+.home-bg {
+    background-image: url('homebg2.jpg'); /* Replace with the path to your image */
+    background-size: cover; /* Cover the entire viewport */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-attachment: fixed; /* Fixed background */
+}
+
+.content {
+    background-color: #bebec0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 255, 255); /* Change the color to your desired hover color */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+.content {
+    position: relative;
+    overflow: hidden;
+}
+
+.background::before {
+    content: "";
+    background-image: url('webdev.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    filter: blur(10px); /* Adjust the blur strength as needed */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.description {
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding: 20px;
+}
+
+.description h1 {
+    font-size: 36px;
+    color: white; /* Adjust text color for readability */
+}
+
+.description p {
+    font-size: 18px;
+    color: rgb(179, 239, 216); /* Adjust text color for readability */
+}
+
+/* ... (your existing CSS) ... */
+
+.home-bg {
+    background-image: url('homebg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; /* Set the background to cover the entire viewport height */
+    display: flex;
+   width: 100%;
+    
+    color: rgb(255, 253, 253); /* Text color on the background */
+   
+}
+
+.intro {
+    font-family: 'Book Antiqua', Times, serif;
+    font-size: 24px;
+    line-height: 1.5;
+    width: 60%; /* Adjust the width of the left div as needed */
+    padding: 50px;
+    font-style: italic; /* Change the font to Book Antiqua */
+    
+}
+
+    /*display: flex;
+    flex-direction: row; /* Arrange divs side by side */
+    /*justify-content: center; /* Center the divs horizontally */
+    /*align-items: center; /* Center the divs vertically */
+   /* margin-top: 20px; /* Add margin to separate from the navigation bar */
+
+
+/*.intro {
+    width: 50%; /* Adjust the width of the left div as needed */
+ /*   padding: 50px;/*
+    font-style: italic; /* Change the font to Book Antiqua */
+ /*   font-size: 24px; /* Adjust the font size as needed */
+ /*   line-height: 2; /* Adjust the line height (line spacing) as needed */
+/*}*/
+
+.picture {
+    width: 50%; /* Adjust the width of the right div as needed */
+    text-align: center; /* Center the image horizontally */
+    
+}
+
+.picture img {
+    max-width: 100%; /* Ensure the image fits within its container */
+    height: 700px;
+}
+
+/* Styling for the ABOUT section */
+.about-section {
+    background-color: #bebec0; /* Background color */
+    padding: 50px;
+    /*border-radius: 30px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle elevation effect */
+    margin-top: 10px; /* Margin to separate from the previous section */
+}
+
+.about-section h2 {
+    font-size: 36px; /* Heading font size */
+    color: #000000; /* Heading text color */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.about-section p {
+    font-size: 20px; /* Paragraph font size */
+    color: #000000; /* Paragraph text color */
+    line-height: 1.5; /* Line spacing */
+    text-align: justify;
+    padding-left: 45px;
+    padding-right: 45px;
+}
+
+.pdf-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7a5a59d0;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+.pdf-button:hover {
+    background-color: #251f1fd0;
+}
+
+.project-section {
+    background-color: #bebec0; /* Background color */
+    padding: 50px;
+    /*border-radius: 30px; /* Rounded corners */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Box shadow for a subtle elevation effect */
+    margin-top: 10px; /* Margin to separate from the previous section */
+}
+
+.project a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #7a5a59d0;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    margin-left: 50px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.project a:hover {
+    background-color: #251f1fd0;
+}
+
+.project h3{
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.project-section h2 {
+    font-size: 36px; /* Heading font size */
+    color: #000000; /* Heading text color */
+    margin-left: 30px; /* Space below the heading */
+    margin-top: 20px;
+}
+
+.project p {
+    font-size: 20px; /* Paragraph font size */
+    color: #090909; /* Paragraph text color */
+    line-height: 1.5; /* Line spacing */
+    text-align: justify;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 20px;
+}
+
+.contact-section{
+    margin-top: 10px;
+    padding: 50px;
+    background-color: #bebec0
+    
+    
+}
+
+.contact-section h2{
+    font-size: 36px; /* Heading font size */
+    color: #000000; /* Heading text color */
+    margin-bottom: 30px; /* Space below the heading */
+    margin-top: 30px;
+    margin-left: 40px;
+
+
+}
+
+.icon {
+    width: 50px; /* Set the width and height as needed */
+    height: 50px;
+    padding-left: 50px;
+    margin-left: 20px;
+    margin-right: 10px; /* Adjust spacing between icons */
+    color: #ffffff; /* Set the color of the icons */
+}
+
+.portfolio{
+    margin-right: 1000px;
+    font-weight: bold;
+}
+
+.freelancing-info {
+    font-size: 20px; /* Paragraph font size */
+    color: #090909; /* Paragraph text color */
+    line-height: 1.5; /* Line spacing */
+    text-align: justify;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+    margin-top: 20px;
+}
+
+.intro h2{
+    padding-top: 40px;
+    padding-left: 30px;
+    color: rgb(15, 61, 42);
+}
+/* Styles for the Typing Text */
+/* Styles for the Typing Text */
+.intro {
+    overflow: hidden; /* Hide overflowing text */
+  }
+  
+  /* Styles for the Text Animation */
+  .intro p {
+    color: rgb(15, 61, 42);
+    padding-left: 30px;
+    display: inline-block;
+    white-space: nowrap; /* Prevent line breaks */
+    overflow: hidden; /* Hide overflowing text */
+    border-right: 3px solid #ffffff; /* Vertical typing cursor */
+    font-size: 24px; /* Adjust font size to 24px */
+    padding-right: 5px; /* Spacing between cursor and text */
+    animation: typing 8s steps(80) 1s 1 normal both, blink-caret 0.5s ;
+  }
+  
+  /* Keyframes for Typing Animation */
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  /* Keyframes for Blinking Cursor Animation */
+  @keyframes blink-caret {
+    from,
+    to {
+      border-color: transparent;
+    }
+    50% {
+      border-color: #333;
+    }
+  }
+  
